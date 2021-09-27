@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import CTA from '../components/CTA/CTA';
+import Features from '../components/Features';
 import Footer from '../components/Footer';
 import { Logo } from '../components/Icons';
 
@@ -18,6 +19,7 @@ export default function Home() {
                 content='Clipboard allows you to track and organize everything you 
                 copy. Instantly access your clipboard on all your devices.'
             />
+            <Features />
             <CTA
                 heading='Clipboard for iOS and Mac OS'
                 content='Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.'

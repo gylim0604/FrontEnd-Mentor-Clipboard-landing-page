@@ -15,6 +15,7 @@ const theme = extendTheme({
                 boxSizing: 'border-box',
                 fontSize: '18px',
                 fontWeight: '400',
+                color: 'grayBlue',
             },
         },
     },
