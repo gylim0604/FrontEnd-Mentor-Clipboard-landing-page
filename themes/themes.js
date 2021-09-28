@@ -19,6 +19,7 @@ const Heading = {
 const Container = {
     baseStyle: {
         px: '1.5rem',
+        maxW: '500px',
     },
 };
 

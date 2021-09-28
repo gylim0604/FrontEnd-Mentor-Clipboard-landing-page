@@ -12,13 +12,19 @@ import { Facebook, Instagram, Logo, Twitter } from './Icons';
 function Footer() {
     return (
         <Box bg='blackAlpha.100'>
-            <Container centerContent='true' py='3rem'>
+            <Container
+                centerContent='true'
+                py={{ base: '3rem', md: '0' }}
+                flexDir={{ md: 'row' }}
+                justifyContent={{ md: 'space-between' }}
+                maxW={{ md: '1200px' }}
+            >
                 <Logo h='60px' w='60px' />
                 <Grid
-                    gridTemplateColumns={{ base: '1fr' }}
+                    gridTemplateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }}
                     py={{ base: '2rem' }}
                     gap={{ base: '2rem' }}
-                    textAlign={{ base: 'center' }}
+                    textAlign={{ base: 'center', md: 'left' }}
                     color='darkGrayBlue'
                 >
                     <GridItem>

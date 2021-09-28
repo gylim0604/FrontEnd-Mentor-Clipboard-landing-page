@@ -12,6 +12,8 @@ function Button({ text, color }) {
             textAlign='center'
             borderRadius='50px'
             fontWeight='600'
+            borderBottom={`${color} 3px solid`}
+            w={{ md: '250px' }}
         >
             {text}
         </Link>

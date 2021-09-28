@@ -4,8 +4,17 @@ import React from 'react';
 
 function Testimonies() {
     return (
-        <Container centerContent='true' py='5rem'>
-            <Stack d='inline-flex' spacing='5rem'>
+        <Container
+            centerContent={{ base: 'true' }}
+            py='5rem'
+            maxW={{ md: '1200px' }}
+        >
+            <Stack
+                d='inline-flex'
+                spacing={{ base: '5rem', md: '5rem' }}
+                direction={{ md: 'row' }}
+                alignItems={{ md: 'center' }}
+            >
                 <Img src='/images/logo-google.png' alt='Google logo' />
                 <Img src='/images/logo-ibm.png' alt='IBM logo' />
                 <Img src='/images/logo-microsoft.png' alt='Microsoft logo' />
