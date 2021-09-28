@@ -7,6 +7,26 @@ const breakpoints = createBreakpoints({
     lg: '1400px',
     xl: '2100px',
 });
+
+const Heading = {
+    baseStyle: {
+        fontWeight: '600',
+        color: 'darkGrayBlue',
+        my: '1rem',
+    },
+};
+
+const Container = {
+    baseStyle: {
+        px: '1.5rem',
+    },
+};
+
+const Text = {
+    baseStyle: {
+        my: '1rem',
+    },
+};
 const theme = extendTheme({
     styles: {
         global: {
@@ -28,6 +48,10 @@ const theme = extendTheme({
     fonts: {
         heading: 'Bai Jamjuree',
         body: 'Bai Jamjuree',
+    },
+    components: {
+        Container,
+        Heading,
     },
 });
 

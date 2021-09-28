@@ -1,10 +1,18 @@
+import { Img } from '@chakra-ui/image';
 import { Box, Heading, Text } from '@chakra-ui/layout';
 import React from 'react';
 
-function FeatureText({ heading, content }) {
+function FeatureText({ img, heading, content }) {
     return (
-        <Box textAlign='center' my='3rem'>
-            <Heading>{heading}</Heading>
+        <Box textAlign='center' my='2rem'>
+            {img ? (
+                <Img src={img} alt='' mx='auto' my='2rem' d='inline-block' />
+            ) : (
+                ''
+            )}
+            <Heading as='h3' size='md' mb='.5rem'>
+                {heading}
+            </Heading>
             <Text>{content}</Text>
         </Box>
     );

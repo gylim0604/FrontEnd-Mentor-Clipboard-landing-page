@@ -23,6 +23,12 @@ class MyDocument extends Document {
                         href='https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap'
                         rel='stylesheet'
                     />
+                    <link
+                        rel='icon'
+                        type='image/png'
+                        sizes='32x32'
+                        href='./images/favicon-32x32.png'
+                    />
                 </Head>
                 <body>
                     <Main />

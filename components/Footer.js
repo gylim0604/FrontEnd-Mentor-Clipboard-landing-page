@@ -13,12 +13,13 @@ function Footer() {
     return (
         <Box bg='blackAlpha.100'>
             <Container centerContent='true' py='3rem'>
-                <Logo h='48px' w='48px' />
+                <Logo h='60px' w='60px' />
                 <Grid
                     gridTemplateColumns={{ base: '1fr' }}
                     py={{ base: '2rem' }}
-                    gap={{ base: '1rem' }}
+                    gap={{ base: '2rem' }}
                     textAlign={{ base: 'center' }}
+                    color='darkGrayBlue'
                 >
                     <GridItem>
                         <Text>FAQs</Text>

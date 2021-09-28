@@ -4,11 +4,13 @@ import { Text } from '@chakra-ui/layout';
 import React from 'react';
 import FeatureText from './FeatureText';
 
-function Features() {
+function Features1() {
     return (
         <Container>
             <Box textAlign='center' my={{ base: '3rem' }}>
-                <Heading>Keep track of your snippets</Heading>
+                <Heading as='h2' size='lg'>
+                    Keep track of your snippets
+                </Heading>
                 <Text>
                     Clipboard instantly stores any item you copy in the cloud,
                     meaning you can access your snippets immediately on all your
@@ -16,7 +18,7 @@ function Features() {
                     everything.
                 </Text>
             </Box>
-            <Img src='/images/image-computer.png' />
+            <Img src='/images/image-computer.png' my='5rem' />
             <FeatureText
                 heading='Quick Search'
                 content='Easily search your snippets by content, category, web address, application, and more.'
@@ -33,4 +35,4 @@ function Features() {
     );
 }
 
-export default Features;
+export default Features1;

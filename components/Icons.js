@@ -1,9 +1,10 @@
 import { Box, Icon } from '@chakra-ui/react';
 import React from 'react';
 
-export function Logo({ h = 125, w = 125 }) {
+export function Logo({ my = 0, h = 125, w = 125 }) {
     return (
         <Icon
+            my={my}
             width={w}
             height={h}
             viewBox='0 0 125 125'
