@@ -6,8 +6,16 @@ import FeatureText from './FeatureText';
 
 function Features2() {
     return (
-        <Container my='5rem'>
-            <Box textAlign='center' my={{ base: '3rem' }}>
+        <Container
+            my='5rem'
+            maxW={{ md: '1200px' }}
+            centerContent={{ md: 'true' }}
+        >
+            <Box
+                textAlign='center'
+                my={{ base: '3rem' }}
+                maxW={{ md: '700px' }}
+            >
                 <Heading> Access Clipboard anywhere</Heading>
                 <Text>
                     Whether you’re on the go, or at your computer, you can
@@ -19,21 +27,23 @@ function Features2() {
                 <Heading>Supercharge your workflow</Heading>
                 <Text>We’ve got the tools to boost your productivity.</Text>
             </Box>
-            <FeatureText
-                img='/images/icon-blacklist.svg'
-                heading='Create blacklists'
-                content='Ensure sensitive information never makes its way to your clipboard by excluding certain sources.'
-            />
-            <FeatureText
-                img='/images/icon-text.svg'
-                heading='Plain text snippets'
-                content='Remove unwanted formatting from copied text for a consistent look.'
-            />
-            <FeatureText
-                img='/images/icon-preview.svg'
-                heading='Sneak preview'
-                content='Quick preview of all snippets on your Clipboard for easy access.'
-            />
+            <Box d={{ md: 'flex' }} flexDir={{ md: 'row' }}>
+                <FeatureText
+                    img='/images/icon-blacklist.svg'
+                    heading='Create blacklists'
+                    content='Ensure sensitive information never makes its way to your clipboard by excluding certain sources.'
+                />
+                <FeatureText
+                    img='/images/icon-text.svg'
+                    heading='Plain text snippets'
+                    content='Remove unwanted formatting from copied text for a consistent look.'
+                />
+                <FeatureText
+                    img='/images/icon-preview.svg'
+                    heading='Sneak preview'
+                    content='Quick preview of all snippets on your Clipboard for easy access.'
+                />
+            </Box>
         </Container>
     );
 }

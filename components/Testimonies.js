@@ -12,7 +12,7 @@ function Testimonies() {
             <Stack
                 d='inline-flex'
                 spacing={{ base: '5rem', md: '5rem' }}
-                direction={{ md: 'row' }}
+                direction={{ base: 'column', md: 'row' }}
                 alignItems={{ md: 'center' }}
             >
                 <Img src='/images/logo-google.png' alt='Google logo' />

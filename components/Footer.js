@@ -15,7 +15,7 @@ function Footer() {
             <Container
                 centerContent='true'
                 py={{ base: '3rem', md: '0' }}
-                flexDir={{ md: 'row' }}
+                flexDir={{ base: 'column', md: 'row' }}
                 justifyContent={{ md: 'space-between' }}
                 maxW={{ md: '1200px' }}
             >

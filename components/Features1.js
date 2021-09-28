@@ -6,8 +6,12 @@ import FeatureText from './FeatureText';
 
 function Features1() {
     return (
-        <Container>
-            <Box textAlign='center' my={{ base: '3rem' }}>
+        <Container maxW={{ md: '1200px' }} centerContent={{ md: 'true' }}>
+            <Box
+                textAlign='center'
+                my={{ base: '3rem' }}
+                maxW={{ md: '700px' }}
+            >
                 <Heading as='h2' size='lg'>
                     Keep track of your snippets
                 </Heading>
@@ -18,19 +22,29 @@ function Features1() {
                     everything.
                 </Text>
             </Box>
-            <Img src='/images/image-computer.png' my='5rem' />
-            <FeatureText
-                heading='Quick Search'
-                content='Easily search your snippets by content, category, web address, application, and more.'
-            />
-            <FeatureText
-                heading='iCloud Sync'
-                content='Instantly saves and syncs snippets across all your devices.'
-            />
-            <FeatureText
-                heading='Complete History'
-                content='Retrieve any snippets from the first moment you started using the app.'
-            />
+            <Box d={{ md: 'flex' }}>
+                <Img
+                    src='/images/image-computer.png'
+                    my={{ base: '5rem', md: '0' }}
+                />
+                <Box>
+                    <FeatureText
+                        heading='Quick Search'
+                        content='Easily search your snippets by content, category, web address, application, and more.'
+                        center={false}
+                    />
+                    <FeatureText
+                        heading='iCloud Sync'
+                        content='Instantly saves and syncs snippets across all your devices.'
+                        center={false}
+                    />
+                    <FeatureText
+                        heading='Complete History'
+                        content='Retrieve any snippets from the first moment you started using the app.'
+                        center={false}
+                    />
+                </Box>
+            </Box>
         </Container>
     );
 }
