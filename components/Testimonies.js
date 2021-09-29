@@ -11,9 +11,11 @@ function Testimonies() {
         >
             <Stack
                 d='inline-flex'
-                spacing={{ base: '5rem', md: '5rem' }}
+                spacing={{ base: '5rem', md: '0' }}
                 direction={{ base: 'column', md: 'row' }}
                 alignItems={{ md: 'center' }}
+                w={{ md: '100%' }}
+                justifyContent={{ md: 'space-between' }}
             >
                 <Img src='/images/logo-google.png' alt='Google logo' />
                 <Img src='/images/logo-ibm.png' alt='IBM logo' />

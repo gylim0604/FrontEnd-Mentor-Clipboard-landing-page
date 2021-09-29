@@ -22,12 +22,23 @@ function Features1() {
                     everything.
                 </Text>
             </Box>
-            <Box d={{ md: 'flex' }}>
+            <Box
+                py={{ lg: '2rem' }}
+                d={{ lg: 'flex' }}
+                pos={{ lg: 'relative' }}
+            >
                 <Img
+                    pos={{ lg: 'relative' }}
+                    transform={{ lg: 'translateX(-20%)' }}
                     src='/images/image-computer.png'
-                    my={{ base: '5rem', md: '0' }}
+                    my={{ base: '5rem', lg: '0' }}
                 />
-                <Box>
+                <Box
+                    d={{ lg: 'flex' }}
+                    flexDir={{ lg: 'column' }}
+                    maxW={{ base: '500px', lg: 'unset' }}
+                    mx={{ base: 'auto', lg: 'unset' }}
+                >
                     <FeatureText
                         heading='Quick Search'
                         content='Easily search your snippets by content, category, web address, application, and more.'

@@ -5,7 +5,7 @@ import React from 'react';
 function FeatureText({ img, heading, content, center = true }) {
     return (
         <Box
-            textAlign={center ? 'center' : { base: 'center', md: 'left' }}
+            textAlign={center ? 'center' : { base: 'center', lg: 'left' }}
             my='2rem'
         >
             {img ? (

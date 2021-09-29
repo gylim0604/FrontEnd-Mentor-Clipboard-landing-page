@@ -5,8 +5,9 @@ import Footer from '../components/Footer';
 import { Logo } from '../components/Icons';
 import Features2 from '../components/Features2';
 import Testimonies from '../components/Testimonies';
-
+import { useMediaQuery } from '@chakra-ui/media-query';
 export default function Home() {
+    const [desktop] = useMediaQuery('(min-width: 700px)');
     return (
         <div>
             <Head>
@@ -14,7 +15,11 @@ export default function Home() {
                 <meta name='description' content='Landing page for Clipboard' />
             </Head>
             <CTA
-                bg="url('/images/bg-header-mobile.png')"
+                bg={
+                    desktop
+                        ? "url('/images/bg-header-desktop.png')"
+                        : "url('/images/bg-header-mobile.png')"
+                }
                 icon={<Logo my='5rem' h='130px' w='130px' />}
                 heading='A history of everything you copy'
                 content='Clipboard allows you to track and organize everything you 
