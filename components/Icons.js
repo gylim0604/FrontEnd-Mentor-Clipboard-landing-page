@@ -31,7 +31,7 @@ export function Facebook({
         <Icon
             width={w}
             height={h}
-            viewbox='0 0 24 24'
+            viewBox='0 0 24 24'
             xmlns='http://www.w3.org/2000/svg'
             fill={fill}
             fillule='nonzero'
@@ -52,7 +52,7 @@ export function Instagram({
         <Icon
             width={w}
             height={h}
-            viewbox='0 0 24 24'
+            viewBox='0 0 24 24'
             xmlns='http://www.w3.org/2000/svg'
             fill={fill}
             fillule='nonzero'

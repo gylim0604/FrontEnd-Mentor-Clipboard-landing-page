@@ -22,7 +22,7 @@ function Footer() {
                     gridTemplateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }}
                     py={{ base: '2rem' }}
                     gap={{ base: '2rem' }}
-                    LinkAlign={{ base: 'center', md: 'left' }}
+                    textAlign={{ base: 'center', md: 'left' }}
                     color='darkGrayBlue'
                     ml={{ md: '150px' }}
                 >
